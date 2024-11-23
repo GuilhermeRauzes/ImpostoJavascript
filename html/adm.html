@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Área Administrativa</title>
+</head>
+<body>
+    <header>
+        <h3>GUILHERME RAUZES</h3>
+        <h4>Estudante de Web</h4>
+        <br>
+         <nav>
+            <a href="../index.html">VOLTAR AO INÍCIO</a>
+        </nav>
+        <br>
+    </header>
+    <br>
+<div class="resposta" id="administrativo">
+    <h2>Área Administrativa</h2>
+    <p>O acesso à esta página é restrito à funcionários ou administradores.</p>
+    <script type="text/javascript"> 
+        let acesso = prompt("Digite sua senha de acesso: "); 
+        if(acesso === "1234"){
+           document.write("<p>Olá Funcionário(a)!</p>");
+           document.write("<p>Aqui estaria o conteúdo a ser exibido para as pessoas com acesso autorizado!</p>");
+           }else{
+               document.write("<p>Acesso negado!</p>");
+           }
+    </script>
+</div>        
+    
+
+    <br><br>
+    <footer>
+        <h3>Guilherme Rauzes</h3>
+        <h4>Estudante de Web</h4>
+        <p class="contatos"><b>Contatos:</b></p>
+        <p class="contatos">E-mail: guirauzes@gmail.com</p>
+        <p class="contatos">WhatsApp: (41) 99559-6403</p>
+    </footer>
+    <script src="../javascript/script.js" type="text/javascript"></script>
+</body>
+</html>

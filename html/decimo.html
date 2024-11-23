@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Calculo do Décimo-Terceiro</title>
+</head>
+<body>
+    <header>
+        <h3>GUILHERME RAUZES</h3>
+        <h4>Estudante de Web</h4>
+        <br>
+         <nav>
+            <a href="../index.html">VOLTAR AO INÍCIO</a>
+        </nav>
+        <br>
+    </header>
+    <br>
+    <section class="container">
+    <h2 id="decimo">Décimo</h2>
+    <p>O décimo terceiro, também conhecido como gratificação de Natal, foi instituído no país em 1962. O direito ao trabalhador foi implementado no governo João Goulart, por meio da lei nº 4.090/1962.</p>
+    <p>Como o nome sugere, ele é uma remuneração extra, que é paga no fim do ano.</p>
+    <p>Lembrando novamente que o imposto utilizado na conta não deve ser levado em consideração, sendo utilizado 9% de impostos para questões de aprendizado.</p>
+    <h2>Calculo</h2>
+    <div class="resposta">
+    <script type="text/javascript">
+        let valorSalario = prompt("Insira o seu atual salário");
+        valorSalario = Number(valorSalario);
+        let primeiraParcela = valorSalario/100*50;
+        primeiraParcela = Number(primeiraParcela);
+        let valorImposto = valorSalario/100*9;
+        valorImposto = Number(valorImposto);
+        let segundaParcela = valorSalario-valorImposto-primeiraParcela;
+        segundaParcela = Number(segundaParcela);
+        let valorTotal = primeiraParcela+segundaParcela;
+        valorTotal = Number(valorTotal);
+        document.write("Salário Informado: R$"+valorSalario+ "<br />");
+        document.write("A primeira parcela do décimo terceiro é: R$"+primeiraParcela+"<br>");
+        document.write("O imposto foi: R$"+valorImposto+"<br>");
+        document.write("A segunda parcela do décimo terceiro é: R$"+segundaParcela+"<br>");   
+    </script>
+</div>
+    <br>
+     <a href="decimo.html" class="link">CLIQUE PARA RECALCULAR</a>
+    <br><br>
+    </section>
+    <br><br>
+    <footer>
+        <h3>Guilherme Rauzes</h3>
+        <h4>Estudante de Web</h4>
+        <p class="contatos"><b>Contatos:</b></p>
+        <p class="contatos">E-mail: guirauzes@gmail.com</p>
+        <p class="contatos">WhatsApp: (41) 99559-6403</p>
+    </footer>
+    <script src="../javascript/script.js" type="text/javascript"></script>
+</body>
+</html>

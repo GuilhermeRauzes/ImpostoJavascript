@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Calculo de Férias</title>
+</head>
+<body>
+    <header>
+        <h3>GUILHERME RAUZES</h3>
+        <h4>Estudante de Web</h4>
+        <br>
+         <nav>
+            <a href="../index.html">VOLTAR AO INÍCIO</a>
+        </nav>
+        <br>
+    </header>
+    <br>
+    <section class="container">
+    <h2 id="ferias">Férias</h2>
+    <p>De acordo com a lei trabalhista, o funcionário que sai de férias tem o direito de receber a remuneração mensal adiantada mais um adicional, que equivale a um terço do pagamento.</p>
+    <p>O valor total deve ser depositado na conta do funcionário até dois dias antes do início do período de descanso.</p>
+    <p>Lembrando novamente que o imposto utilizado na conta não deve ser levado em consideração, sendo utilizado 9% de impostos para questões de aprendizado.</p>
+    <h2>Calculo</h2>
+<div class="resposta">
+    <script type="text/javascript">
+        let valorSalario = prompt("Insira o seu atual salário");
+        valorSalario = Number(valorSalario);
+        let valorAbono = valorSalario/3;
+        valorAbono = Number(valorAbono);
+        let valorBruto = valorSalario+valorAbono;
+        valorBruto = Number(valorBruto);
+        let valorImposto = valorBruto/100*9;
+        valorImposto = Number(valorImposto);
+        let valorLiquido = valorBruto-valorImposto;
+        valorLiquido = Number(valorLiquido);
+        document.write("Salário Informado: R$"+valorSalario+ "<br />");
+        document.write("Abono de 1/3: R$"+valorAbono+ "<br>");
+        document.write("Valor bruto de Férias: R$"+valorBruto+ "<br />");
+        document.write("Valor de Imposto: R$"+valorImposto+ "<br />");
+        document.write("Valor Liquido a Receber: R$"+valorLiquido+ "<br />");   
+    </script>
+</div>
+        
+    <br><br>
+    <a href="ferias.html" class="link">CLIQUE PARA RECALCULAR</a>
+    <br><br><br>
+    </section>
+    <br><br>
+    <footer>
+        <h3>Guilherme Rauzes</h3>
+        <h4>Estudante de Web</h4>
+        <p class="contatos"><b>Contatos:</b></p>
+        <p class="contatos">E-mail: guirauzes@gmail.com</p>
+        <p class="contatos">WhatsApp: (41) 99559-6403</p>
+    </footer>
+    <script src="../javascript/script.js" type="text/javascript"></script>
+</body>
+</html>
